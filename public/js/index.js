@@ -26,12 +26,12 @@ $(document).ready(function () {
       description: "Enter text here",
     },
     {
-      name: "JavaScript",
+      name: "Javascript",
       image: "./images/javascript.png",
       description: "Enter text here",
     },
     {
-      name: "APIs",
+      name: "API",
       image: "./images/api.png",
       description: "Enter text here",
     },
@@ -76,12 +76,12 @@ $(document).ready(function () {
       description: "Enter text here",
     },
     {
-      name: "Slack",
+      name: "Slack Submissions",
       image: "./images/slacksubmissions.png",
       description: "Enter text here",
     },
     {
-      name: "Twilio",
+      name: "Text Submissions",
       image: "./images/textsubmissions.png",
       description: "Enter text here",
     }
@@ -223,7 +223,7 @@ $('#catCard').append(`
     var newPostTitle = $("<h2>");
     var newPostDate = $("<small>");
     var newPostCategory = $("<h5>");
-    var newPostLink = $("<a href=" + post.link + " target='_blank'>")
+    var newPostLink = $("<a target='_blank' href=" + post.link + ">")
     newPostLink.text(post.link)
     newPostCategory.text(post.category);
     newPostCategory.css({

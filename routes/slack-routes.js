@@ -100,13 +100,13 @@ slackEvents.on('app_mention', (message, body) => {
       
 
       var str = message.text;
-    var n = str.indexOf("|");
+    var n = str.indexOf(">" || "|" );
     var url = str.slice(1,n)
     console.log("Sliced message: " +url);
     db.resources.create({
       title: "Slack Submission",
       description: "Shared link via Slackbot",
-      category: "Slack Link",
+      category: "Slack Submissions",
       link : url,
       author : "Slack User on " + postingStamp
 
